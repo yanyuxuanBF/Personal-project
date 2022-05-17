@@ -1,0 +1,27 @@
+.carousel-inner{
+	width:700px;
+	height:400px;
+	margin: auto;
+}
+.scrollspy-example{
+	text-align : center;
+	margin: auto;
+	width:1000px;
+	
+	border-left:solid;
+	border-right:solid;
+	background-color:rgb(255, 255, 255,0.5);;
+	
+}
+body{
+	background-color: grey;
+}
+video{
+	border: solid #dee2e6;
+	width: 700px;
+	height:400px;
+}
+#navbar-example2{
+	 
+		  position:  relative;
+}
