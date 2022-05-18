@@ -12,7 +12,11 @@ body{
 	margin: auto;
 	width:1250px;
 }
-.card{
+.card:hover{
 	box-shadow: 10px 10px 5px grey;
+    background: #f8f8f2;
+    transition: all 250ms;
+    margin: 0 1% 20px;
 }
+
 
