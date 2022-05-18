@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta charset="UTF-8">
-<title>BLOG</title>
 
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+<head>
+	<meta charset="UTF-8">
+	<title>BLOG</title>
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
@@ -17,87 +18,83 @@
 		crossorigin="anonymous"></script>
 	<link rel="stylesheet" href="../static/css/blog.css">
 </head>
-<body>
 
-  <nav id="navbar-example2" class="navbar navbar-dark bg-dark px-3">
-  <a class="navbar-brand" href="#">BIGFACE</a>
-  <ul class="nav nav-pills">
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading1">ANIMATION</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">COOKING</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#scrollspyHeading2">DUBBING</a>
-    </li>
-  </ul>
-</nav>
-<div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-  <h4 id="scrollspyHeading1">ANIMATION</h4>
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../static/image/naruto.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="../static/image/bleach.jpeg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="../static/image/reborn.jpeg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-  <p>The three favorite animations that accompany my youth growth are death, Naruto and tutor.</p>
-  <h4 id="scrollspyHeading2">COOKING</h4>
-  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-  <div class="carousel-indicators">
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-    <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-  </div>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="..\static\image\20220517162037.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..\static\image\20220517162055.jpg" class="d-block w-100" alt="...">
-    </div>
-    <div class="carousel-item">
-      <img src="..\static\image\20220517162107.jpg" class="d-block w-100" alt="...">
-    </div>
-  </div>
-  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Previous</span>
-  </button>
-  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Next</span>
-  </button>
-</div>
-  <p>As a good gentleman, you must have good cooking skills. Ha ha ha</p>
-  <h4 id="scrollspyHeading3">DUBBING</h4>
-  <video controls>
-    <source src="..\static\video\20220517165502.mp4"
-            type="video/mp4">
-  </video>
-  <p>The dubbing of beginners needs to be practiced. But as a hobby, it's still a good choice.</p>
-<hr>
-<p>This page will not be updated because the author is lazy.</p><br>
-</div>
+<body>
+	<nav class="navbar navbar-dark bg-dark fixed-top">
+		<div class="container-fluid">
+			<a class="navbar-brand">BIGFACE</a>
+			<form class="d-flex">
+				<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+				<button class="btn btn-outline-success" type="submit">Search</button>
+			</form>
+		</div>
+	</nav><br><br><br>
+	<h1 class="display-1">ANIMATION</h1>
+	<div class="row row-cols-1 row-cols-md-2 g-4">
+		<div class="col">
+			<div class="card">
+				<img src="..\static\image\bleach.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">BLEACH</h5>
+					<p class="card-text">Protagonist Ichigo Kurosaki is a seemingly decadent, thin, but very hot-blooded
+						teenager, and has a constitution that can see the spirit. There is a father who runs a
+						children's clinic and two sisters Xia Li and Youzi who are absolutely normal in character.
+						Ichigo must go home on time at seven o'clock every day, otherwise his father will teach Ichigo a
+						lesson using the family rules of "body language lesson". A noisy father and son, a sensible
+						sister and a life no different from that of other ordinary people.
+						When the rotten wood Lucia was kicked to the corner by him, she looked at him in surprise and
+						asked, "can you see me?" The curtain of timing was officially opened by him. Since then,
+						everything around heizaki Ichigo has changed dramatically.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="..\static\image\naruto.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">NARUTO</h5>
+					<p class="card-text">The story successfully depicts the ninja who was originally hidden in the dark
+						and used the world's most powerful perseverance and the most arduous efforts to do the most
+						secret and unspeakable cruel things as the most proud and brightest career in the sun.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="..\static\image\reborn.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">REBORN</h5>
+					<p class="card-text">The story revolves around a series of stories about the growth of the tenth
+						generation leader of pongley (Italian mafia), Gangji Zetian, and his family members. Gangji
+						Zetian, a descendant of the first generation of penggli, is a "waste firewood Gang" who can't do
+						anything. However, in order to cultivate into the leader of penggli family, a killer named
+						ribaoen came from Italy to teach Gangji. He was kind-hearted and unwilling to hurt others, but
+						he began to take responsibility to protect his companions and grew into an excellent leader.</p>
+				</div>
+			</div>
+		</div>
+		<div class="col">
+			<div class="card">
+				<img src="..\static\image\KONAN.jpeg" class="card-img-top" alt="...">
+				<div class="card-body">
+					<h5 class="card-title">KONAN</h5>
+					<p class="card-text">When senior high school detective Shinichi Kudo and childhood schoolmate Mao
+						Lilan went to the amusement park together, they witnessed the suspicious transaction scene of
+						the man in black. Kudo Shinichi, who only peeked at the transaction, ignored another accomplice
+						approaching from behind. He was poisoned by the man. When he woke up, his body shrunk!
+						If those guys know that Kudo Shinichi is still alive, they will not only lose their lives, but
+						also endanger the people around them. At the suggestion of Dr. Ali, he decided to hide his
+						identity. When asked about his name by Xiaolan, he assumed the pseudonym of Edogawa Conan. In
+						order to collect the intelligence of those guys, he stayed at Xiaolan's home, where his father
+						worked as a detective.
+						The mysterious organization in black... All he knew was that they took the name of wine as their
+						code name. In order to reveal the true face of those guys, little detective Konan Edogawa began
+						to show his skill!</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
 </body>
+
 </html>

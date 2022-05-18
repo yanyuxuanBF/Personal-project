@@ -1,27 +1,18 @@
-.carousel-inner{
-	width:700px;
-	height:400px;
-	margin: auto;
-}
-.scrollspy-example{
-	text-align : center;
-	margin: auto;
-	width:1000px;
-	
-	border-left:solid;
-	border-right:solid;
-	background-color:rgb(255, 255, 255,0.5);;
-	
-}
 body{
-	background-color: grey;
+	background-image:url(../image/c35fbc71205274af1c8ce5b584fa82ac.jpeg);
+	background-repeat: repeat-y;
 }
-video{
-	border: solid #dee2e6;
-	width: 700px;
-	height:400px;
+.display-1{
+	text-align : center;
 }
-#navbar-example2{
-	 
-		  position:  relative;
+.card{
+	width:600px;
 }
+.row{
+	margin: auto;
+	width:1250px;
+}
+.card{
+	box-shadow: 10px 10px 5px grey;
+}
+
