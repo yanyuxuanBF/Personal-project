@@ -41,7 +41,9 @@ public class PersonalProjectController {
 	}
 
 	@GetMapping("/blog")
-	public String blog(@RequestParam("Username") String username, Map<String, Object> map) {
+	public String blog(//
+			@RequestParam("Username") String username, //
+			Map<String, Object> map) {
 
 		map.put("Username", username);
 		List<Blog> blogs = blogService.findBlogsByUsername(username);
@@ -55,7 +57,9 @@ public class PersonalProjectController {
 	}
 
 	@GetMapping("/editBlog")
-	public String getEditBlog(@RequestParam("Username") String username, Map<String, Object> map) {
+	public String getEditBlog(//
+			@RequestParam("Username") String username, //
+			Map<String, Object> map) {
 		map.put("Username", username);
 		return "editBlog";
 	}
@@ -101,13 +105,13 @@ public class PersonalProjectController {
 	public ModelAndView editBlog(//
 			@RequestParam("Username") String username, //
 			@RequestParam("title") String title, //
-			@RequestParam("editContent") String editBlog, //
+			@RequestParam("editContent") String editContent, //
 			ModelAndView mv) {
 		User user = userService.findByUsername(username);
 
 		Blog blog = Blog.builder()//
 				.title(title)//
-				.editBlog(editBlog)//
+				.editContent(editContent)//
 				.userId(user.getId()).username(username).build();
 		blogService.addBlog(blog);
 		mv.addObject("user_id", user.getId());

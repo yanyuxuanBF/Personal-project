@@ -22,5 +22,5 @@ public class Blog {
 	private Long userId;
 	private String username;
 	private String title;
-	private String editBlog;
+	private String editContent;
 }
