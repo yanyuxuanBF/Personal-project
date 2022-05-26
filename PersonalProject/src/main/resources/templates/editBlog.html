@@ -16,7 +16,7 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
 		integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
 		crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="../static/css/blog.css">
+	<link rel="stylesheet" href="/css/blog.css">
 	<script>
 		$(() => {
 			'use strict'
@@ -39,22 +39,12 @@
 	<h1 class="display-1">EDIT BLOG</h1>
 	<div class="row row-cols-1 row-cols-md-2 g-4 " style="margin:auto;width:600px;">
 		<div class="col">
-			<form class="needs-validation" novalidate>
+			<form class="needs-validation" novalidate action="/editBlog" method="post">
 				<div class="card " style="border-radius:20px;"><br>
-				<div class="fewq">
-					<label class="input-group-text" for="inputGroupFile01"
-						style="margin:auto;width:475px;">Image</label>
-					<input type="file" class="form-control" id="inputGroupFile01" style="margin:auto;width:475px;"
-						required>
-					<div class="valid-feedback"style="margin: auto;width:465px;">
-						Looks good!!
-					</div>
-					<div class="invalid-feedback"style="margin: auto;width:465px;">
-						Please upload the picture file!!
-					</div></div>
 					<div class="card-body" style="margin:auto;width:500px;">
+						<input type="hidden" name="Username" th:value="${Username}">
 						<label for="floatingInput">Title</label>
-						<input type="text" class="form-control" id="floatingInput" placeholder="title" required>
+						<input type="text" class="form-control" id="floatingInput" name="title" placeholder="title" required>
 						<div class="valid-feedback">
 							Looks good!!
 						</div>
@@ -63,7 +53,7 @@
 						</div>
 						<label for="floatingTextarea2">Edit content</label>
 						<div>
-						<textarea class="form-control" placeholder="Say something.." id="floatingTextarea2"
+						<textarea class="form-control" placeholder="Say something.." id="floatingTextarea2" name="editContent"
 							style="height: 100px" required></textarea>
 						<div class="valid-feedback">
 							Looks good!!
