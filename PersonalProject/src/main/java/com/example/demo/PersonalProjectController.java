@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.example.demo.medol.Blog;
-import com.example.demo.medol.User;
+import com.example.demo.model.Blog;
+import com.example.demo.model.User;
 import com.example.demo.repository.UserRepository;
 import com.example.demo.services.BlogService;
 import com.example.demo.services.UserService;
